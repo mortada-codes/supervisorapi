@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const DELETED_COMPLAINS_URL = (userId) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Mobile/getDeletedComplainsForMobileByUser?userId=${userId}`)
 
 export async function DeletedComplains(userId) {

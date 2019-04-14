@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const DetailCode_URL = (masterCodeId) => (`http://192.168.50.123:5558/FinalSYSCodeAPI/api/DetailCode/GetDetailedCodesByMasterIdForMobile?masterCodeId=${masterCodeId}`)
 
 export async function DetailCode(masterCodeId) {

@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const Attendance_Url = () => (`http://192.168.50.123:5558/finalfleetapi/api/Attendance`)
 
 export async function Attendance(locationId , workerId , createdBy , updatedBy , description) {

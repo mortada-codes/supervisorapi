@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const Boxes_URL = () => (`http://192.168.50.123:5558/HelpdeskAPI/api/Box/GetAll`)
 
 export async function Boxes() {

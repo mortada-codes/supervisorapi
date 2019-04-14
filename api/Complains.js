@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const COMPLAINS_URL = (complainId) => (`http://192.168.50.123:5558/HelpdeskAPI/Api/Complains/${complainId}`)
 const MOBILE_COMPLAIN_URL = (userId , statusId , pageIndex , pageSize) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Mobile/GetMobileComplainsByUserIdAndStatusIdByPage?userId=${userId}&statusId=${statusId}&pageIndex=${pageIndex}&pageSize=${pageSize}`)
 const DELETED_COMPLAINS_URL = (userId) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Mobile/getDeletedComplainsForMobileByUser?userId=${userId}`)

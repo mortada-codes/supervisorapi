@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const LOGIN_URL = (userName , password , encryptedData) => (`http://192.168.50.123:5558/finalUAMAPI/api/User/Authenticate?userName=${userName}&password=${password}&encrypteddata=${encryptedData}`);
 const Change_Password_URL = (userName , oldPassword , newPassword) => (`http://192.168.50.123:5558/finalUAMAPI/api/User/ChangePassword?userName=${userName}&oldPassword=${oldPassword}&newPassword=${newPassword}`);
 const Forgot_Password_URL = (userName , MobileNumber) => (`http://192.168.50.123:5558/finalUAMAPI/api/User/ForgotPasswordandSMS?UserName=${userName}&MobileNumber=${MobileNumber}`)

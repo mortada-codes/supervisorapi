@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from '../util/fetchy';
 const Check_Contractor_URL = (ContractorId) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Contractor/CheckContractor?ContractorId=${ContractorId}`)
 
 export async function CheckContractor(ContractorId) {

@@ -1,5 +1,6 @@
+import fetch from '../util/fetchy';
 const MOBILE_COMPLAIN_URL = (userId , statusId , pageIndex , pageSize) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Mobile/GetMobileComplainsByUserIdAndStatusIdByPage?userId=${userId}&statusId=${statusId}&pageIndex=${pageIndex}&pageSize=${pageSize}`);
-import fetch from 'node-fetch';
+
 
 export async function MobileComplains(userId , statusId , pageIndex , pageSize) {
     try {

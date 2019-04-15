@@ -1,5 +1,6 @@
 import fetch from '../util/fetchy';
-const Attendance_Url = () => (`http://192.168.50.123:5558/finalfleetapi/api/Attendance`)
+import BASE_API  from '../util/baseAPI'
+const Attendance_Url = () => (`http://${BASE_API}/finalfleetapi/api/Attendance`)
 
 export async function Attendance(locationId , workerId , createdBy , updatedBy , description) {
     const now = new Date();

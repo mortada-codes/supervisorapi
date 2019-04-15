@@ -1,5 +1,6 @@
 import fetch from '../util/fetchy';
-const DetailCode_URL = (masterCodeId) => (`http://192.168.50.123:5558/FinalSYSCodeAPI/api/DetailCode/GetDetailedCodesByMasterIdForMobile?masterCodeId=${masterCodeId}`)
+import BASE_API  from '../util/baseAPI'
+const DetailCode_URL = (masterCodeId) => (`http://${BASE_API}/FinalSYSCodeAPI/api/DetailCode/GetDetailedCodesByMasterIdForMobile?masterCodeId=${masterCodeId}`)
 
 export async function DetailCode(masterCodeId) {
     try {

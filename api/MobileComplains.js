@@ -1,5 +1,6 @@
 import fetch from '../util/fetchy';
-const MOBILE_COMPLAIN_URL = (userId , statusId , pageIndex , pageSize) => (`http://192.168.50.123:5558/HelpdeskAPI/api/Mobile/GetMobileComplainsByUserIdAndStatusIdByPage?userId=${userId}&statusId=${statusId}&pageIndex=${pageIndex}&pageSize=${pageSize}`);
+import BASE_API  from '../util/baseAPI'
+const MOBILE_COMPLAIN_URL = (userId , statusId , pageIndex , pageSize) => (`http://${BASE_API}/HelpdeskAPI/api/Mobile/GetMobileComplainsByUserIdAndStatusIdByPage?userId=${userId}&statusId=${statusId}&pageIndex=${pageIndex}&pageSize=${pageSize}`);
 
 
 export async function MobileComplains(userId , statusId , pageIndex , pageSize) {

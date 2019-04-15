@@ -1,5 +1,6 @@
 import fetch from '../util/fetchy';
-const Under_Ground_Store_URL = () => (`http://192.168.50.123:5558/HelpdeskAPI/api/UnderGroundStore/GetAll`)
+import BASE_API  from '../util/baseAPI'
+const Under_Ground_Store_URL = () => (`http://${BASE_API}/HelpdeskAPI/api/UnderGroundStore/GetAll`)
 const Nearest_Under_Ground_Store_URL = (Latitude , Longitude) => (`http://www.makkahwcts.com/HelpdeskAPI/api/UnderGroundStore/GetNearestUnderGroundStore?Latitude=${Latitude}&Longitude=${Longitude}&Count=5`)
 
 export async function GetUnderGroundStore() {
